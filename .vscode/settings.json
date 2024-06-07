@@ -1,0 +1,26 @@
+{
+    "cSpell.words": [
+        "Fullname",
+        "isset",
+        "loggedin"
+    ],
+    "cSpell.ignoreWords": [
+        "timeframes"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3309,
+            "driver": "MySQL",
+            "name": "productivity",
+            "username": "Admin7493",
+            "database": "Productivity timer",
+            "password": "Password1"
+        }
+    ]
+}
