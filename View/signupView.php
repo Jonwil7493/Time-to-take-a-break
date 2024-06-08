@@ -17,6 +17,8 @@
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
         <br>
+        <p>Password must be 8 characters long, contain at least one special character and one number.</p>
+        <br>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
         <br>
