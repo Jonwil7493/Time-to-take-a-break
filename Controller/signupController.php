@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->num_rows > 0) {
             error_log("Username already taken: $username");
-            header("Location: ../View/signupView.php?error=Username already taken");
+            header("Location: ../View/signupView.php?error=Username '$username' is already taken. Please choose a different one.");
             exit();
         } else {
             $stmt->close();
