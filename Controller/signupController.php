@@ -10,6 +10,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Log the received input
     error_log("Received signup request with Fullname: $fullname, Username: $username");
 
+    // Password policy check
+    if (!preg_match('/^(?=.*[!@#$%^&*(),.?":{}|<>])(?=.*[0-9])(?=.*[A-Za-z]).{8,}$/', $password)) {
+        error_log("Password does not meet the policy requirements.");
+        header("Location: ../View/signupView.php?error=Password must be at least 8 characters long, contain at least one special character and one number.");
+        exit();
+    }
+
     if ($password != $confirm_password) {
         error_log("Passwords do not match");
         header("Location: ../View/signupView.php?error=Passwords do not match");
