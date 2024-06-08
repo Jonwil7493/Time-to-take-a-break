@@ -11,9 +11,13 @@
         <p style="color:red;"><?php echo htmlspecialchars($_GET['error']); ?></p>
     <?php endif; ?>
     <form action="../Controller/signupController.php" method="post">
+        <h2>Sign Up</h2>
         <label for="fullname">Full Name:</label>
         <input type="text" id="fullname" name="fullname" required>
         <br>
+        <p>Please enter a unique username</p>
+        <br>
+    
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
         <br>
